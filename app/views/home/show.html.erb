@@ -1,0 +1,16 @@
+<h1>Hello World</h1>
+
+
+
+<% if current_user %>
+    <p>Your Payloop Score is: <%= current_user.payloopscore %> </p>
+    <% if current_user.payloopscore >= 500 %>
+    	<p> You are approved!!! </p>
+    <% else %>
+    	<p> Sorry we were not able to collect enough information. Please provide more details via the options listed below </p>
+    <% end %>
+ <% else %>
+    
+  <% end %>
+</div>
+<%= yield %>
